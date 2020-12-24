@@ -1,9 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.1209
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotWhatsapp", "BotWhatsapp\BotWhatsapp.csproj", "{42502B98-1B2A-4446-B35D-020CD36A3F4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BotWhatsapp", "BotWhatsapp\BotWhatsapp.csproj", "{42502B98-1B2A-4446-B35D-020CD36A3F4D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{470C98AD-649D-444F-8698-86A8754F6909}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

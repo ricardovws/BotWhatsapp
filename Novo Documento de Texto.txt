@@ -1,0 +1,41 @@
+ ChromeDriver driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
+
+            driver.Navigate().GoToUrl(url);
+            driver.Manage().Window.Maximize();
+
+            Thread.Sleep(10000);
+
+            foreach (var contact in contacts)
+            {
+                //<div class="_3FRCZ copyable-text selectable-text" contenteditable="true" data-tab="3" dir="ltr"></div>
+                var searchElement = driver.FindElementByClassName("_3FRCZ");
+                searchElement.SendKeys(contact);
+
+                
+
+                Thread.Sleep(10000);
+
+                ////<span dir="auto" title="Nothing" class="_3ko75 _5h6Y_ _3Whw5"><span class="matched-text _3Whw5">Nothin</span>g</span>
+                ///
+
+                //_3ko75 _5h6Y_ _3Whw5
+                //var contactElement = driver.FindElementByXPath($"//span[@title='{contact}']");
+                var contactElement = driver.FindElementByClassName("_3ko75 _5h6Y_ _3Whw5");
+
+                contactElement.Click();
+
+                ////<div tabindex="-1" class="_2FVVk _2UL8j"><div class="_2FbwG" style="visibility: visible;">Type a message</div><div class="_3FRCZ copyable-text selectable-text" contenteditable="true" data-tab="1" dir="ltr" spellcheck="true"></div></div>
+                //Thread.Sleep(10000);
+
+                //var chatElement = driver.FindElementByClassName("_3uMse");
+                //chatElement.SendKeys("Olá, você acaba de receber uma mensagem de um robô-teste do whatsapp. Não tenha medo.");
+
+                //Thread.Sleep(2000);
+
+                ////< span data - testid = "send" data - icon = "send" class=""><svg xmlns = "http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill = "currentColor" d="M1.101 21.757L23.8 12.028 1.101 2.3l.011 7.912 13.623 1.816-13.623 1.817-.011 7.912z"></path></svg></span>
+
+                //var buttonSendElement = driver.FindElementByXPath($"//span[@data-icon= 'send']");
+
+                //Thread.Sleep(5000);
+
+                //buttonSendElement.Click();
